@@ -1,0 +1,131 @@
+{
+  "name": "Joe Classic",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#111111",
+    "editor.foreground": "#CCCCCC",
+    "editorLineNumber.foreground": "#606060",
+    "editorCursor.foreground": "#00FFFF",
+    "editor.selectionBackground": "#333366",
+    "editor.lineHighlightBackground": "#1a1a1a"
+  },
+  "semanticTokenColors": {
+    "function": "#DDDDDD",
+    "type": "#FFFFFF"
+  },
+  "tokenColors": [
+    {
+      "scope": [
+        "comment",
+        "comment.block",
+        "comment.line",
+        "comment.documentation"
+      ],
+      "settings": {
+        "foreground": "#13a10e",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "scope": [
+        "string.quoted.double",
+        "string.quoted.single",
+        "constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#569CD6"  // Medium blue
+      }
+    },
+    {
+      "scope": "constant.character.escape",
+      "settings": {
+        "foreground": "#00FFFF"  // Cyan
+      }
+    },
+    {
+      "scope": [
+        "keyword.control.directive.include",
+        "meta.preprocessor.include",
+        "source.cpp"
+      ],
+      "settings": {
+        "foreground": "#003bea"  // #include
+      }
+    },
+    {
+      "scope": [
+        "string.quoted.other.lt-gt.include",
+        "meta.preprocessor.include"
+      ],
+      "settings": {
+        "foreground": "#61d6d6"  // Medium cyan for <header.h>
+      }
+    },
+    {
+      "scope": [
+        "punctuation.section.block.begin.bracket.curly",
+        "punctuation.section.block.end.bracket.curly",
+        "meta.body.switch",
+        "meta.block.switch",
+        "meta.block"
+      ],
+      "settings": {
+        "foreground": "#B041B0"  // Medium magenta braces
+      }
+    },
+    {
+      "scope": [
+        "punctuation.section.parameters.begin.bracket.round",
+        "punctuation.section.parameters.end.bracket.round",
+        "punctuation.section.parameters",
+        "punctuation.section.parens.begin.bracket.round",
+        "punctuation.section.parens.end.bracket.round",
+        "meta.preprocessor.macro",
+        "meta.bracket.square.access",
+        "entity.name.function.definition",
+        "meta.head.function.definition",
+        "meta.parents",
+        "meta.function.definition",
+        "punctuation.terminator.statement",
+        "meta.header.function.definition",
+        "meta.function.definition"
+      ],
+      "settings": {
+        "foreground": "#DDDDDD"  // Slightly lighter than default gray for ()
+      }
+    },
+    {
+      "scope": [
+        "entity.name.function.member",
+        "entity.name.function.call",
+        "entity.name.scope-resolution",
+        "meta.parens",
+        "meta.body.function.definition"
+      ],
+      "settings": {
+        "foreground": "#DDDDDD"  // Slightly lighter than default gray for ()
+      }
+    },
+    {
+      "scope": [
+        "entity.name.namespace",
+        "meta.using-namespace"
+      ],
+      "settings": {
+        "foreground": "#DDDDDD"  // Slightly lighter than default for namespace
+      }
+    },
+    {
+      "scope": "variable",
+      "settings": {
+        "foreground": "#CCCCCC"
+      }
+    }
+  ]
+}

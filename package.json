@@ -13,137 +13,54 @@
     "Themes"
   ],
   "contributes": {
-    "keybindings": [
-      {
-        "key": "ctrl+u",
-        "command": "scrollPageUp",
-        "when": "editorTextFocus"
+    "configurationDefaults": {
+      "[cpp]": {
+        "editor.tabSize": 8,
+        "editor.insertSpaces": false
       },
-      {
-        "key": "ctrl+v",
-        "command": "scrollPageDown",
-        "when": "editorTextFocus"
+      "[c]": {
+        "editor.tabSize": 8,
+        "editor.insertSpaces": false
       },
-      {
-        "key": "ctrl+a",
-        "command": "cursorHome",
-        "when": "editorTextFocus"
+      "[h]": {
+        "editor.tabSize": 8,
+        "editor.insertSpaces": false
       },
-      {
-        "key": "ctrl+e",
-        "command": "cursorEnd",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+z",
-        "command": "cursorWordStartLeft",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+x",
-        "command": "cursorWordStartRight",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+g",
-        "command": "editor.action.jumpToBracket",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+y",
-        "command": "editor.action.deleteLines",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+d",
-        "command": "deleteRight",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+w",
-        "command": "deleteWordEndRight",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+o",
-        "command": "deleteWordStartLeft",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k u",
-        "command": "cursorTop",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k v",
-        "command": "cursorBottom",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k b",
-        "command": "editor.action.setSelectionAnchor",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k k",
-        "command": "editor.action.selectToSelectionAnchor",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k c",
-        "command": "editor.action.clipboardCopyAction",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k m",
-        "command": "extension.moveBlockHere",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k y",
-        "command": "editor.action.clipboardCutAction",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k l",
-        "command": "workbench.action.gotoLine",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k f",
-        "command": "actions.find",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k s",
-        "command": "workbench.action.files.save",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+k r",
-        "command": "extension.insertFileAtCursor",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+l",
-        "command": "editor.action.nextMatchFindAction",
-        "when": "editorFocus"
-      },
-      {
-        "key": "ctrl+_",
-        "command": "undo",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+^",
-        "command": "redo",
-        "when": "editorTextFocus"
-      },
-      {
-        "key": "ctrl+shift+v",
-        "command": "editor.action.clipboardPasteAction",
-        "when": "editorTextFocus"
+      "[plaintext]": {
+        "editor.tabSize": 8,
+        "editor.insertSpaces": false
       }
+    },
+    "keybindings": [
+      { "key": "ctrl+u", "command": "scrollPageUp", "when": "editorTextFocus" },
+      { "key": "ctrl+v", "command": "scrollPageDown", "when": "editorTextFocus" },
+      { "key": "ctrl+a", "command": "cursorHome", "when": "editorTextFocus" },
+      { "key": "ctrl+e", "command": "cursorEnd", "when": "editorTextFocus" },
+      { "key": "ctrl+shift+z", "command": "cursorWordStartLeft", "when": "editorTextFocus" },
+      { "key": "ctrl+shift+x", "command": "cursorWordStartRight", "when": "editorTextFocus" },
+      { "key": "ctrl+g", "command": "editor.action.jumpToBracket", "when": "editorTextFocus" },
+      { "key": "ctrl+y", "command": "editor.action.deleteLines", "when": "editorTextFocus" },
+      { "key": "ctrl+d", "command": "deleteRight", "when": "editorTextFocus" },
+      { "key": "ctrl+w", "command": "deleteWordEndRight", "when": "editorTextFocus" },
+      { "key": "ctrl+o", "command": "deleteWordStartLeft", "when": "editorTextFocus" },
+      { "key": "ctrl+k u", "command": "cursorTop", "when": "editorTextFocus" },
+      { "key": "ctrl+k v", "command": "cursorBottom", "when": "editorTextFocus" },
+      { "key": "ctrl+k b", "command": "extension.markBlockStart", "when": "editorTextFocus" },
+      { "key": "ctrl+k k", "command": "extension.markBlockEnd", "when": "editorTextFocus" },
+      { "key": "ctrl+k ctrl+k", "command": "extension.markBlockEnd", "when": "editorTextFocus" },
+      { "key": "ctrl+k c", "command": "extension.copyBlockHere", "when": "editorTextFocus" },
+      { "key": "ctrl+k ctrl+c", "command": "extension.copyBlockHere", "when": "editorTextFocus" },
+      { "key": "ctrl+k m", "command": "extension.moveBlockHere", "when": "editorTextFocus" },
+      { "key": "ctrl+k ctrl+m", "command": "extension.moveBlockHere", "when": "editorTextFocus" },
+      { "key": "ctrl+k y", "command": "editor.action.clipboardCutAction", "when": "editorTextFocus" },
+      { "key": "ctrl+k l", "command": "workbench.action.gotoLine", "when": "editorTextFocus" },
+      { "key": "ctrl+k f", "command": "actions.find", "when": "editorTextFocus" },
+      { "key": "ctrl+k s", "command": "workbench.action.files.save", "when": "editorTextFocus" },
+      { "key": "ctrl+k r", "command": "extension.insertFileAtCursor", "when": "editorTextFocus" },
+      { "key": "ctrl+l", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
+      { "key": "ctrl+shift+a", "command": "editor.action.selectAll", "when": "editorTextFocus" },
+      { "key": "ctrl+shift+c", "command": "editor.action.clipboardCopyAction", "when": "editorTextFocus" },
+      { "key": "ctrl+shift+v", "command": "editor.action.clipboardPasteAction", "when": "editorTextFocus" }
     ],
     "themes": [
       {
@@ -151,30 +68,34 @@
         "uiTheme": "vs-dark",
         "path": "./themes/joe-classic-color-theme.json"
       }
+    ],
+    "commands": [
+      { "command": "extension.insertFileAtCursor", "title": "Insert File at Cursor" },
+      { "command": "extension.moveBlockHere", "title": "Move Block to Cursor" },
+      { "command": "extension.copyBlockHere", "title": "Copy Block to Cursor" },
+      { "command": "extension.markBlockStart", "title": "Mark Block Start" },
+      { "command": "extension.markBlockEnd", "title": "Mark Block End" },
+      { "command": "extension.clearBlockAnchor", "title": "Clear Block Anchor" }
     ]
   },
-  "extensionKind": [
-    "ui"
-  ],
-  "contributesThemes": true,
+  "extensionKind": ["ui"],
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
     "outDir": "out",
-    "lib": [
-      "es6"
-    ],
+    "lib": ["es6"],
     "sourceMap": true,
     "rootDir": "src",
     "strict": true
   },
-  "exclude": [
-    "node_modules",
-    ".vscode-test"
-  ],
+  "exclude": ["node_modules", ".vscode-test"],
   "main": "./out/extension.js",
   "activationEvents": [
-    "onCommand:extension.insertFileAtCursor"
+    "onCommand:extension.insertFileAtCursor",
+    "onCommand:extension.markBlockStart",
+    "onCommand:extension.markBlockEnd",
+    "onCommand:extension.clearBlockAnchor",
+    "onCommand:extension.moveBlockHere"
   ],
   "repository": {
     "type": "git",
