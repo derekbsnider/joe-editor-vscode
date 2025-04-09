@@ -1,0 +1,197 @@
+{
+  "name": "joe-editor-vscode",
+  "displayName": "Joe's Own Extension",
+  "description": "Emulates Joe's Own Editor keybindings and syntax highlighting in VSCode.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Keymaps",
+    "Themes"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+u",
+        "command": "scrollPageUp",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+v",
+        "command": "scrollPageDown",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+a",
+        "command": "cursorHome",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+e",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+z",
+        "command": "cursorWordStartLeft",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+x",
+        "command": "cursorWordStartRight",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+g",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+y",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+d",
+        "command": "deleteRight",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+w",
+        "command": "deleteWordEndRight",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+o",
+        "command": "deleteWordStartLeft",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k u",
+        "command": "cursorTop",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k v",
+        "command": "cursorBottom",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k b",
+        "command": "editor.action.setSelectionAnchor",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k k",
+        "command": "editor.action.selectToSelectionAnchor",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k m",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k y",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k l",
+        "command": "workbench.action.gotoLine",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k f",
+        "command": "actions.find",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k s",
+        "command": "workbench.action.files.save",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+k r",
+        "command": "extension.insertFileAtCursor",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+l",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus"
+      },
+      {
+        "key": "ctrl+_",
+        "command": "undo",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+^",
+        "command": "redo",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Joe Classic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/joe-classic-color-theme.json"
+      }
+    ]
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "contributesThemes": true,
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "out",
+    "lib": [
+      "es6"
+    ],
+    "sourceMap": true,
+    "rootDir": "src",
+    "strict": true
+  },
+  "exclude": [
+    "node_modules",
+    ".vscode-test"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:extension.insertFileAtCursor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/derekbsnider/joe-editor-vscode.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "joe",
+    "joes own editor",
+    "joe editor",
+    "vscode"
+  ],
+  "author": "Derek Snider",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/vscode": "^1.99.1",
+    "typescript": "^5.8.3"
+  }
+}

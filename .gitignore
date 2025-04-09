@@ -1,0 +1,17 @@
+# VSCode Extension Defaults
+node_modules/
+out/
+.vscode/
+*.vsix
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+
+# OS junk files
+Thumbs.db

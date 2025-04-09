@@ -1,0 +1,70 @@
+{
+  "name": "Joe Classic",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#000000",
+    "editor.foreground": "#CCCCCC",
+    "editorLineNumber.foreground": "#606060",
+    "editorCursor.foreground": "#00FFFF",
+    "editor.selectionBackground": "#333366",
+    "editor.lineHighlightBackground": "#1a1a1a"
+  },
+  "tokenColors": [
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#00FF00", // green comments
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#FFFFFF" // white keywords
+      }
+    },
+    {
+      "scope": [
+        "string.quoted.double",
+        "string.quoted.single",
+        "constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#ADD8E6" // light-blue strings and numbers
+      }
+    },
+    {
+      "scope": "constant.character.escape",
+      "settings": {
+        "foreground": "#00FFFF" // light-cyan escapes
+      }
+    },
+    {
+      "scope": [
+        "entity.name.include", // usually for C/C++ includes
+        "meta.preprocessor.include"
+      ],
+      "settings": {
+        "foreground": "#0000FF" // blue #include
+      }
+    },
+    {
+      "scope": "meta.include string.quoted",
+      "settings": {
+        "foreground": "#00FFFF" // light-cyan for <...> paths
+      }
+    },
+    {
+      "scope": "punctuation.section.block",
+      "settings": {
+        "foreground": "#FF00FF" // magenta for braces
+      }
+    },
+    {
+      "scope": "variable",
+      "settings": {
+        "foreground": "#CCCCCC" // light gray for plain text
+      }
+    }
+  ]
+}
