@@ -3,8 +3,10 @@
   "displayName": "Joe's Own Extension",
   "description": "Emulates Joe's Own Editor keybindings and syntax highlighting in VSCode.",
   "version": "0.0.1",
+  "icon": "icon.png",
+  "publisher": "derekbsnider",
   "engines": {
-    "vscode": "^1.99.0"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Keymaps",
@@ -94,7 +96,7 @@
       },
       {
         "key": "ctrl+k m",
-        "command": "editor.action.clipboardCutAction",
+        "command": "extension.moveBlockHere",
         "when": "editorTextFocus"
       },
       {
@@ -191,7 +193,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.14.0",
-    "@types/vscode": "^1.99.1",
+    "@types/vscode": "^1.90.0",
     "typescript": "^5.8.3"
   }
 }
